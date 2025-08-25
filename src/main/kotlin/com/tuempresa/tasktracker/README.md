@@ -97,4 +97,4 @@ Lista de tareas:
 ---
 
 ## 👨‍💻 Autor
-David Herrera
+**David Herrera**
