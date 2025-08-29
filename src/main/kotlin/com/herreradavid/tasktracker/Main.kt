@@ -68,8 +68,8 @@ fun main() {
     gestor.cambiarEstadoTarea(4, EstadoTarea.EN_PROGRESO)
 
     // Mostrar tareas
-    //gestor.mostrarTareas()
+    gestor.mostrarTareas()
 
     // CLI Interactivo
-    Menu(gestor).iniciar()
+    // Menu(gestor).iniciar()
 }
