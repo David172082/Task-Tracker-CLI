@@ -4,11 +4,8 @@ import com.herreradavid.tasktracker.model.Tarea
 import com.herreradavid.tasktracker.model.Categoria
 import com.herreradavid.tasktracker.model.enums.EstadoTarea
 import com.herreradavid.tasktracker.model.enums.PrioridadTarea
-import com.herreradavid.tasktracker.service.GestorTareas
-import com.herreradavid.tasktracker.ui.Menu
 
 fun main() {
-    val gestor = GestorTareas()
 
     // Categorías
     val categoriaEstudio = Categoria(1, "Estudio", "Relacionado con aprendizaje y cursos")
@@ -56,20 +53,13 @@ fun main() {
         categoria = categoriaEstudio
     )
 
-    // Agregar al gestor
-    gestor.agregarTarea(tarea1)
-    gestor.agregarTarea(tarea2)
-    gestor.agregarTarea(tarea3)
-    gestor.agregarTarea(tarea4)
+// Guardar en una lista
+    val tareas = listOf(tarea1, tarea2, tarea3)
 
-    // Cambiar estados de las tareas 2, 3 y 4
-    gestor.cambiarEstadoTarea(2, EstadoTarea.EN_PROGRESO)
-    gestor.cambiarEstadoTarea(3, EstadoTarea.COMPLETADA)
-    gestor.cambiarEstadoTarea(4, EstadoTarea.EN_PROGRESO)
-
-    // Mostrar tareas
-    gestor.mostrarTareas()
-
-    // CLI Interactivo
-    // Menu(gestor).iniciar()
+    // Mostrar todas las tareas
+    println("\nLista de tareas:\n")
+    tareas.forEach {
+        println(it.mostrarInfo())
+        println("----------------------------------------------------")
+    }
 }

@@ -37,9 +37,7 @@ TaskTracker/
 - **Categoría** (ej. "Estudios", "Trabajo")  
 - **Fecha de creación automática**  
 
-✅ Listar todas las tareas en consola.  
-✅ Cambiar el estado de una tarea por su ID.  
-✅ Listar tareas filtradas por estado.  
+✅ Listar todas las tareas en consola.   
 ✅ Validación de títulos con longitud máxima (`MAX_TITULO_LENGTH`).  
 
 ---
@@ -51,16 +49,6 @@ TaskTracker/
 1. Compilar el proyecto en IntelliJ o con Gradle/Maven.
 2. Ejecutar el archivo `Main.kt`.
 
-### Menú principal
-
-```
-===== MENU DE TAREAS =====
-1. Crear tarea
-2. Listar todas las tareas
-3. Cambiar estado de tarea
-4. Listar tareas por estado
-5. Salir
-```
 
 ---
 
